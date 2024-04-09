@@ -4,7 +4,7 @@ import QualifyingListItem from './QualifyingListItem.jsx'
 
 
 const QualifyingList = (props) =>{
-	const [list, setList] = useState([props.data])
+	const [list, setList] = useState([{positionText:"", laps:"", points:"", constructors:{name:""}, drivers:{forename:"", surname:""}}]);
 
 	useEffect( () => {
 		setList(props.data);

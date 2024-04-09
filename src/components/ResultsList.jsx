@@ -14,7 +14,6 @@ const ResultsList = (props) =>{
 		const newList = [...list];
 		setList(newList.reverse());
 	}
-	console.log(list);
 	return(
 		<div className='w-full flex content-start text-sm grid grid-cols-1'>
 			<div className='w-5/6 grid grid-cols-3 items-end text-xl justify-self-center gap-2 mb-2'>

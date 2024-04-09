@@ -10,7 +10,6 @@ const StandingsPanel = (props) =>{
 	useEffect( () => {
 		const url1 = "https://jevan-f1-api.glitch.me/api/standings/" + props.data + "/drivers";
 		const url2 = "https://jevan-f1-api.glitch.me/api/standings/" + props.data + "/constructors";
-		console.log('fetching standings...');
 		fetch (url1,{mode:'cors'})
 		.then( resp => resp.json() )
 		.then( data => { setDriverSt(data); })

@@ -9,7 +9,6 @@ function App() {
 
 	const loginClick = (loggedin)=>{
 		setAuth(loggedin);
-		console.log("hi");
 	}
 	if(!Auth)
 		return (

@@ -17,7 +17,6 @@ const MainView = (props) =>{
 		//updates state-races
 		setSelectedRace(0);
 		const url = "https://jevan-f1-api.glitch.me/api/races/season/" + props.data;
-		console.log('fetching races...');
 		fetch (url,{mode:'cors'})
 		.then( resp => resp.json() )
 		.then( data => { setRaces(data); })
