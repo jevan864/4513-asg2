@@ -66,7 +66,7 @@ const MainPageWH = (props) =>{
 		console.log('fetching ... here to check if Ive gone infinite');
 		fetch (url,{mode:'cors'})
 		.then( resp => resp.json() )
-		.then( data => { setSzns(data.filter(s=>s.year>=2000)); })
+		.then( data => { setSzns(data.filter(s=>s.year>=2000 && s.year<2024)); })
 	}, [] );	
 	
 	const sznChange = (newszn)=>{
