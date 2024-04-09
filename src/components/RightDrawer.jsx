@@ -61,7 +61,7 @@ const RightDrawer = (props) => {
             >
               <div
                 className={clsx(
-                  "flex flex-col h-full overflow-y-scroll bg-black text-white p-20 shadow-xl bg-blue-400 rounded-lg"
+                  "flex flex-col h-full overflow-y-scroll bg-black text-white p-20 shadow-xl bg-black rounded-lg"
                 )}
               >
                 {props.content}

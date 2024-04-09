@@ -13,7 +13,7 @@ const FavModal = (props) => {
 
 	return (
     	<Dialog open={props.open} onClose={() => setIsOpen(false)}>
-			<div className="fixed inset-0 bg-black/50" aria-hidden="true" /> 
+			<div className="fixed inset-0 bg-gray-500/75" aria-hidden="true" /> 
    			<div className="border-2 border-slate-500 bg-black fixed inset-0 flex w-1/3 h-1/2 mx-auto my-auto items-center justify-center p-4">
 				
 				<Dialog.Panel className="min-w-full h-full max-w-lg rounded bg-black text-white">
