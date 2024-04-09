@@ -49,7 +49,6 @@ const MainPageWH = (props) =>{
 		}
 		else{ // Circuit
 			if(favCirc.length <= 0 || !favCirc.find(c => c.circuitRef == MDData[0].circuitRef)){ 
-				console.log('got here 2');
 				const newFavCirc = [...favCirc, MDData[0]];
 				setFavCirc(newFavCirc)
 		   }
@@ -63,7 +62,6 @@ const MainPageWH = (props) =>{
 // consuming assignment #1 APIs
 	useEffect( () => {
 		const url = "https://jevan-f1-api.glitch.me/api/seasons";
-		console.log('fetching ... here to check if Ive gone infinite');
 		fetch (url,{mode:'cors'})
 		.then( resp => resp.json() )
 		.then( data => { setSzns(data.filter(s=>s.year>=2000 && s.year<2024)); })

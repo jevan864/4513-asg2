@@ -2,7 +2,6 @@ import FavListItem from "./FavListItem";
 
 
 const FavContent = (props) =>{
-	console.log(props.drivers);
 	return(
 		<div className='container w-full h-full mx-2 grid grid-cols-3 items-start text-sm gap-2'>
 			<div className='flex flex-col'>
